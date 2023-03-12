@@ -1,0 +1,12 @@
+.page__tutorboost {
+  width: 100%;
+  height: 100%;
+ 
+  .page__tutorboost-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    // max-width: 2500px; /* Set a max width to prevent the image from becoming too large on larger screens */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+}

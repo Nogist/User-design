@@ -1,0 +1,147 @@
+// @import '../../index.scss';
+
+// .home {
+//   width: 100%;
+// }
+// .home__designer {
+//   width: 100%;
+//   height: 150vh;
+//   background-color: aquamarine;
+// }
+// .home__userdetails {
+//   background-color: $SecondaryText;
+//   width: 100%;
+//   height: 100vh;
+// }
+// .home__gallery {
+//   width: 100%;
+//   height: 100vh;
+// }
+// .user__projects {
+//   width: 100%;
+//   height: 100%;
+//   padding: 10.42%;
+//   background-color: white;
+// }
+
+// .header {
+//   width: 100%;
+//   height: 100vh;
+//   display: flex;
+//   justify-content: space-between;
+//   flex-direction: column;
+//   padding: 149px 0 64px 0;
+//   height: 100vh;
+// }
+
+// .header h1:first-child {
+//   padding-left: 10.42%;
+// }
+// .header h1:nth-child(2) {
+//   text-align: center;
+// }
+// .header h1:last-child {
+//   align-self: flex-end;
+//   padding-right: 10.42%;
+// }
+
+// .circular-text-container {
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: flex-end;
+// }
+
+// .designers {
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   gap: 48px;
+//   h1:last-child {
+//     align-self: center;
+//   }
+//   h1:first-child {
+//     padding-left: 10.42%;
+//   }
+// }
+
+// #swapping {
+// 	-webkit-animation: swapping 1.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+// 	        animation: swapping 1.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+// }
+// @-webkit-keyframes swapping {
+//   0% {
+//     letter-spacing: -0.5em;
+//     opacity: 0;
+//   }
+//   40% {
+//     opacity: 0.6;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
+// @keyframes swapping {
+//   0% {
+//     letter-spacing: -0.5em;
+//     opacity: 0;
+//   }
+//   40% {
+//     opacity: 0.6;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
+
+// .user__details {
+//   width: 100%;
+//   height: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 24px;
+//   padding: 0 10.42%;
+//   color: white;
+//   text-align: center;
+//   position: relative;
+//   div {
+//     position: absolute;
+//     bottom: 40px;
+//     right: 10.42%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 12px;
+//     border: 1px solid white;
+//     border-radius: 50%;
+//     padding: 40px 13px;
+//     h1 {
+//       font-size: 18px;
+//       line-height: 24px;
+//     }
+//   }
+//   span {
+//     position: absolute;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 100%;
+//     height: 100%;
+//     img {
+//       object-fit: cover;
+//       max-width: 100%;
+//       height: auto;    
+//     }
+//   }
+// }
+
+

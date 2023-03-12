@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+
+$fontFamily:'Cinzel', serif;
+$fontText: 'Inter', sans-serif;
+$fontSecondary: 'Sacramento', cursive;
+$primaryText: #222222;
+$SecondaryText: #1A1A1A;
+
+.App {
+  max-width: 2500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+h1, h2, h3 , h4, h5{
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: $fontFamily;
+  font-weight: 400;
+  font-size: 10rem;
+  line-height: 12.1875rem;
+}
+h3 {
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 75px;
+  color: #8CB9B4;
+  font-family: $fontFamily;
+}
+
+
+h5 {
+  font-family: $fontFamily;
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 40px;
+  color: $primaryText;
+}
+h6 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  font-family: $fontSecondary;
+  color: #8CB9B4;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: $fontText;
+}
+
+button {
+  font-family: $fontFamily;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  white-space: nowrap;
+  color: $primaryText;
+  text-transform: uppercase;
+  width: 327px;
+  height: 56px;
+  background-color:  #8CB9B4;
+  border: none;
+}
+.button__overlay {
+  background-color: #f5f0ec;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border: 1px solid #8CB9B4;
+  z-index: -1;
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  h1 {
+    font-size: 3.5em;
+    line-height: 4rem;
+  }
+}

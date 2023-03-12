@@ -1,0 +1,246 @@
+@import '../index.scss';
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10.42% ;
+  background-color: transparent;
+  overflow: visible;
+  z-index: 99998;
+  backdrop-filter: blur(60px);
+  position: fixed;
+  max-width: 2500px;
+  div > img {
+    object-fit: contain;
+    
+  }
+}
+.text {
+  position: absolute;
+  bottom: 134px;
+  left: 13.47%;
+  transform: translate(-50%, -50%);
+  font-family: $fontFamily;
+  font-weight: 400;
+  font-size: 17.5972px;
+  line-height: 24px;
+  user-select: none;
+  pointer-events: none;
+  background-color: black;
+  z-index: 999;
+}
+
+.animate {
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transition: transform 0.5s ease-out;
+}
+
+.clockwise {
+  animation-name: rotate;
+}
+
+.anticlockwise {
+  animation-name: antirotate;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes antirotate {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.text span {
+  position: absolute;
+  text-transform: uppercase;
+  display: inline-block;
+  top: -70px;
+  transform-origin: 0px 70px;
+}
+
+.mouse-container {
+  position: absolute;
+  bottom: 90px;
+  left: 13.47%;
+  transform: translate(-50%, -50%);
+}
+
+.designers__header {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+.designers__header.active {
+  opacity: 1;
+}
+.designers {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 48px;
+  
+  h1:last-child {
+    align-self: center;
+  }
+  h1:first-child {
+    padding-left: 10.42%;
+  }
+  h1:nth-child(2) {
+    padding-left: 10.42%;
+  }
+}
+
+#swapping {
+	-webkit-animation: swapping 1.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: swapping 1.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@-webkit-keyframes swapping {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes swapping {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#first__stroke {
+  border-top:  1px solid #999999;
+  padding-top: 24px;
+}
+
+.user__projects__content {
+  width: 556px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  z-index: 999;
+ 
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #999999;
+    padding: 0px 37px 24px 0 ;
+    font-size: 36px;
+    color: #999999;
+    p {
+      font-family: $primaryText;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 38px;
+      color: #999999;
+      text-transform: uppercase;
+    }
+  }
+}
+.projects__context {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  z-index: 1;
+  .projects__context__div {
+    display: flex;
+    flex-direction: column;
+    .projects__context__buttons {
+      margin: 56px 0 36px;
+    }
+    span {
+      position: relative;
+      width: 100%;
+      img {
+        object-fit: cover;
+        max-width: 100%;
+        height: auto;  
+      }
+    }
+    div {
+      span {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 32px;
+        p {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 24px;
+          text-transform: capitalize;
+        }
+        h6 {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #999999;
+          font-family: $fontText;
+        }
+      }
+      button {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #8CB9B4;
+        font-family: $fontText;
+        background-color: unset;
+        text-transform: capitalize;
+        border: 1px solid #8CB9B4;
+        width: 135px;
+        height: 44px;
+      }
+    }
+  }
+}
+.projects__context.active {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 750px) {
+  .user__projects__content {
+    width: 100%;
+    p {
+      font-size: 1.6rem !important;
+    }
+    h3 {
+      font-size: 2.8rem !important;
+    }
+  }
+  .projects__context {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+}
