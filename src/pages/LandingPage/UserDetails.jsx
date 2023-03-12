@@ -6,7 +6,7 @@ const UserDetails = () => {
 
   const { ref: view, inView: inview } = useInView({
     threshold: 0.2,
-    rootMargin: "0px 0px 0px 0px",
+    rootMargin: "-270px 0px 0px 0px",
   });
 
   return (

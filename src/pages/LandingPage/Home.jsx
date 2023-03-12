@@ -3,6 +3,7 @@ import Navbar from './../../components/Navbar'
 import Designer from '../../components/Designer';
 import UserProjects from './UserProjects';
 import Header from './Header';
+import Gallery from './Gallery';
 import './home.scss';
 import CircularText from '../../components/CircularText';
 import UserDetails from './UserDetails';
@@ -17,11 +18,11 @@ const Home = () => {
   });
   const { ref: ref2, inView: visible2 } = useInView({
     threshold: 0.4,
-    rootMargin: "300px 0px 240px 0px",
+    rootMargin: "0px 0px 240px 0px",
   });
     const { ref: ref3, inView: visible3 } = useInView({
     threshold: 0.49,
-    rootMargin: "0px 0px 20px 0px",
+    rootMargin: "-300px 0px 20px 0px",
   });
     const { ref: ref4, inView: visible4 } = useInView({
     threshold: 0.6,
@@ -34,7 +35,7 @@ const Home = () => {
       <div className={` circular-text-container ${visible1 && 'white'} ${visible2 && 'white'} ${visible3 && 'white'} ${visible4 && 'white'}`}>
         <CircularText />
       </div>
-      <div className={`sections ${visible1 && 'active3' } ${visible2 && 'active4' } ${visible3 && 'active0'} ${visible4 && 'active5'}`}></div>
+      <div className={`sections ${visible1 && 'active3' } ${visible2 && 'active5' } ${visible3 && 'active0'} ${visible4 && 'active5'}`}></div>
       <Navbar />
       <Header text='user' text1='centered' text2='design' />
       <div ref={ref1} className={`home__designer`}>
@@ -44,7 +45,7 @@ const Home = () => {
         <UserDetails />
       </div>
       <div className='home__gallery'>
-        
+        <Gallery />
       </div>
       <div ref={ref3} className={`home__designer`}>
         <Designer text1="selected" text2="projects" />
