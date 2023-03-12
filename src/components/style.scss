@@ -10,6 +10,7 @@
   overflow: visible;
   z-index: 99998;
   backdrop-filter: blur(60px);
+  position: absolute;
   max-width: 2500px;
   div > img {
     object-fit: cover;
