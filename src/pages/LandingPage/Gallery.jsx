@@ -1,10 +1,8 @@
 import React from 'react';
-import image1 from '../../assets/mock.png'
-import image2 from '../../assets/mock2.jpg';
-import image3 from '../../assets/mock3.jpg';
-import image4 from '../../assets/mock4.jpg';
-import image5 from '../../assets/mock5.jpg';
-import image6 from '../../assets/mock6.jpg';
+import image1 from '../../assets/gallery1.png'
+import image2 from '../../assets/gallery2.png';
+import image3 from '../../assets/gallery4.png';
+import image4 from '../../assets/gallery3.png';
 import { useInView } from 'react-intersection-observer';
 import './home.scss';
 
@@ -31,14 +29,14 @@ const Gallery = () => {
         </div>
         <div className={`${inviews && 'animate'}`}>
           <img src={image4} alt="gallery" />
-          <img src={image5} alt="gallery" />
+          <img src={image1} alt="gallery" />
         </div>
         <div className={`${inviews && 'animate'}`}>
-          <img src={image6} alt="gallery" />
+          <img src={image2} alt="gallery" />
         </div>
         <div className={`${inviews && 'animate'}`}>
           <img src={image4} alt="gallery" />
-          <img src={image5} alt="gallery" />
+          <img src={image3} alt="gallery" />
         </div>
       </div>
     </div>

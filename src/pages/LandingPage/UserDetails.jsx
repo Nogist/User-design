@@ -1,5 +1,4 @@
 import React from 'react';
-import Logo from '../../assets/logobg.png';
 import { useInView } from 'react-intersection-observer';
 
 const UserDetails = () => {
@@ -18,9 +17,6 @@ const UserDetails = () => {
         <h1>download</h1>
         <h1>here</h1>
       </div>
-      <span>
-        <img src={Logo} alt="logo" />
-      </span>
     </div>
   )
 }

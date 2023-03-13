@@ -10,7 +10,7 @@ const Designer = (props) => {
   });
   const { ref: ref2, inView: visible2 } = useInView({
     threshold: 0.47,
-    rootMargin: "-80px 0px 20px 0px",
+    rootMargin: "50px 0px 20px 0px",
   });
 
   return (

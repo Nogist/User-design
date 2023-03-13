@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './../../components/Navbar'
 import Designer from '../../components/Designer';
 import UserProjects from './UserProjects';
 import Header from './Header';
 import Gallery from './Gallery';
 import './home.scss';
-import CircularText from '../../components/CircularText';
 import UserDetails from './UserDetails';
 import Contact from './Contact';
 import { useInView } from 'react-intersection-observer';
 
 const Home = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const { ref: ref1, inView: visible1 } = useInView({
     threshold: 0.49,
@@ -22,7 +25,7 @@ const Home = () => {
   });
     const { ref: ref3, inView: visible3 } = useInView({
     threshold: 0.49,
-    rootMargin: "-300px 0px 20px 0px",
+    rootMargin: "100px 0px 100px 0px",
   });
     const { ref: ref4, inView: visible4 } = useInView({
     threshold: 0.6,
@@ -32,13 +35,10 @@ const Home = () => {
 
   return (
     <div className='home'>
-      <div className={` circular-text-container ${visible1 && 'white'} ${visible2 && 'white'} ${visible3 && 'white'} ${visible4 && 'white'}`}>
-        <CircularText />
-      </div>
-      <div className={`sections ${visible1 && 'active3' } ${visible2 && 'active5' } ${visible3 && 'active0'} ${visible4 && 'active5'}`}></div>
+      <div className={`sections ${visible1 && 'active3' } ${visible2 && 'active5' } ${visible3 && 'active0'} ${visible4 && 'active4'}`}></div>
       <Navbar />
       <Header text='user' text1='centered' text2='design' />
-      <div ref={ref1} className={`home__designer`}>
+      <div ref={ref1} className={`home__designer`} id='designer'>
         <Designer text="ui" text0='ux' text2="designer" />
       </div>
       <div ref={ref2} className={`home__userdetails`}>

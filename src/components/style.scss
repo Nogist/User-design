@@ -12,7 +12,7 @@
   backdrop-filter: blur(60px);
   position: absolute;
   max-width: 2500px;
-  div > img {
+  a > img {
     object-fit: cover;
     max-width: 100%;
     height: auto;  
@@ -30,6 +30,7 @@
   user-select: none;
   pointer-events: none;
   background-color: black;
+  animation: animate 2.5s linear infinite;
   z-index: 999;
 }
 
@@ -40,15 +41,15 @@
   transition: transform 0.5s ease-out;
 }
 
-.clockwise {
-  animation-name: rotate;
-}
+// .clockwise {
+//   animation-name: rotate;
+// }
 
-.anticlockwise {
-  animation-name: antirotate;
-}
+// .anticlockwise {
+//   animation-name: antirotate;
+// }
 
-@keyframes rotate {
+@keyframes animate {
   0% {
     transform: rotate(0deg);
   }
@@ -56,14 +57,14 @@
     transform: rotate(360deg);
   }
 }
-@keyframes antirotate {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
+// @keyframes antirotate {
+//   0% {
+//     transform: rotate(360deg);
+//   }
+//   100% {
+//     transform: rotate(0deg);
+//   }
+// }
 
 .text span {
   position: absolute;
@@ -109,8 +110,8 @@
 }
 
 #swapping {
-	-webkit-animation: swapping 1.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: swapping 1.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	-webkit-animation: swapping 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: swapping 2.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 @-webkit-keyframes swapping {
   0% {

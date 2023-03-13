@@ -1,13 +1,14 @@
 import React from 'react'
 import logo from '../assets/Vector.png';
+import { Link } from 'react-router-dom';
 import './style.scss';
 
 const Navbar = () => {
   return (
     <div className='navbar'>
-      <div>
+      <Link to='/'>
         <img src={logo} alt="logo" />
-      </div>
+      </Link>
       <h5>docs</h5>
     </div>
   )

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../LandingPage/Header';
 import Navbar from '../../components/Navbar';
 import Designer from '../../components/Designer';
@@ -20,6 +20,10 @@ import '../../components/style.scss';
 
 
 const Menu = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   let description = `I handle various projects across various fields, I have the ability to take a client's idea and turn it into a design masterpiece that will make their competitors green with envy. I have a black belt in brainstorming and can come up with more ideas in a minute than most people can in a day (No jokes).`
   const me = 'I am a computer programmer and a junior majoring in computer science and a self-taught developer. I am knowledgeable in Figma, Javascript, Python , Solidity and experimental knowledge of Rust. ';
@@ -79,7 +83,7 @@ const Menu = () => {
       )}
       <Navbar />
       <Header text3={description}/>
-      <div ref={ref1} className={`home__designer`}>
+      <div ref={ref1} className={`home__designer`} id='designer'>
         <Designer text1="ux" text2="design" />
       </div>
       <div className={`home__project `}>
