@@ -38,6 +38,13 @@ const Gallery = () => {
           <img src={image4} alt="gallery" />
           <img src={image3} alt="gallery" />
         </div>
+        <div className={`${inviews && 'animate'}`}>
+          <img src={image3} alt="gallery" />
+        </div>
+        <div className={`${inviews && 'animate'}`}>
+          <img src={image1} alt="gallery" />
+          <img src={image2} alt="gallery" />
+        </div>
       </div>
     </div>
   )
