@@ -35,7 +35,6 @@ const Home = () => {
 
   return (
     <div className='home'>
-      <div className='section'></div>
       <div className={`sections ${visible1 && 'active3' } ${visible2 && 'active5' } ${visible3 && 'active0'} ${visible4 && 'active4'}`}></div>
       <Navbar />
       <Header text='user' text1='centered' text2='design' />
