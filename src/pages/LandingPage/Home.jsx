@@ -17,10 +17,10 @@ const Home = () => {
 
   const { ref: ref1, inView: visible1 } = useInView({
     threshold: 0.49,
-    rootMargin: "120px 0px -60px 0px",
+    rootMargin: "170px 0px -150px 0px",
   });
   const { ref: ref2, inView: visible2 } = useInView({
-    threshold: 0.6,
+    threshold: 0.45,
     rootMargin: "0px 0px 0px 0px",
   });
     const { ref: ref3, inView: visible3 } = useInView({

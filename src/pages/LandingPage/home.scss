@@ -57,7 +57,7 @@
   z-index: -1;
   pointer-events: auto;
   opacity: 0;
-  animation: fadeOut 1.2s ease-in-out forwards;
+  animation: fadeOut 1s ease-in-out forwards;
   max-width: 2500px;
   margin: 0 auto; 
 }
@@ -72,12 +72,11 @@
   background-repeat: no-repeat;
   z-index: -1;
   pointer-events: auto;
-  opacity: 0;  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  opacity: 0;  
   max-width: 2500px;
   margin: 0 auto; 
-  transition: opacity 1.2s ease-in-out;
+  transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out;
+  transform: translateZ(-1px) scale(1.05);
 }
 @keyframes fadeOut {
   0% {
@@ -124,8 +123,9 @@
 .sections.active5 {
   opacity: 1;
   background-image: url('../../assets/logobg.png');
-  animation-name: boom;
-  animation-duration: 4s;
+
+  transform: translateZ(-1px) scale(1);
+  animation-duration: 9s;
   animation-timing-function: ease-in-out;
 }
 

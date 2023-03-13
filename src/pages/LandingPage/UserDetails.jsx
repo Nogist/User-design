@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer';
 const UserDetails = () => {
 
   const { ref: view, inView: inview } = useInView({
-    threshold: 0.42,
+    threshold: 0.35,
     rootMargin: "0px 0px 0px 0px",
   });
 
