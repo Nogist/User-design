@@ -17,11 +17,11 @@ const Home = () => {
 
   const { ref: ref1, inView: visible1 } = useInView({
     threshold: 0.49,
-    rootMargin: "0px 0px -60px 0px",
+    rootMargin: "120px 0px -60px 0px",
   });
   const { ref: ref2, inView: visible2 } = useInView({
-    threshold: 0.4,
-    rootMargin: "0px 0px 240px 0px",
+    threshold: 0.6,
+    rootMargin: "0px 0px 0px 0px",
   });
     const { ref: ref3, inView: visible3 } = useInView({
     threshold: 0.49,
@@ -35,6 +35,7 @@ const Home = () => {
 
   return (
     <div className='home'>
+      <div className='section'></div>
       <div className={`sections ${visible1 && 'active3' } ${visible2 && 'active5' } ${visible3 && 'active0'} ${visible4 && 'active4'}`}></div>
       <Navbar />
       <Header text='user' text1='centered' text2='design' />
