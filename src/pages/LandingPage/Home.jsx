@@ -25,7 +25,7 @@ const Home = () => {
   });
     const { ref: ref3, inView: visible3 } = useInView({
     threshold: 0.49,
-    rootMargin: "100px 0px 100px 0px",
+    rootMargin: "0px 0px 100px 0px",
   });
     const { ref: ref4, inView: visible4 } = useInView({
     threshold: 0.6,

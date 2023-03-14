@@ -13,7 +13,7 @@ const UserProjects = () => {
 
   const { ref: ref1, inView: visible1 } = useInView({
     threshold: 0.10,
-    rootMargin: "-200px 0px 70px 0px",
+    rootMargin: "-200px 0px -80px 0px",
   });
   return (
     <div ref={ref1} className={`users__projects ${visible1 ? 'active':'hiddentext'}`}>
