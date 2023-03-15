@@ -1,6 +1,4 @@
 import React from 'react';
-import { AiOutlineTwitter } from 'react-icons/ai';
-import { BsLinkedin } from 'react-icons/bs';
 import { useInView } from 'react-intersection-observer';
 
 const Contact = () => {
@@ -15,13 +13,7 @@ const Contact = () => {
         <h1>Talk</h1>
       </span>
       <p>If you want a product that's both beautiful and functional, look no further. Hire me, and together we'll create something that will make people say "Wow, I need that!" (or "I want that!" or "I'm in love with that!" - whatever floats your boat).</p>
-      <div>
-        <p>Contact Me</p>
-        <span>
-          <div><AiOutlineTwitter /></div>
-          <div><BsLinkedin /></div>
-        </span>
-      </div>
+      <a href='mailto:Nwosunneoma@gmail.com'>Contact Me</a>
     </div>
   )
 }

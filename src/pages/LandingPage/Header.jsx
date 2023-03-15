@@ -11,7 +11,7 @@ const Header = (props) => {
         {props.text3 && <h1 className='header__content'>{props.text3}</h1>}
         {props.text2 && <h1>{props.text2}</h1>}
       </div>
-      <a href='#designer' className={` circular-text-container`}>
+      <a href='#designer' className={`circular-text-container`}>
         <CircularText />
       </a>
     </div>

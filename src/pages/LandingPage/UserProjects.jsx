@@ -1,6 +1,8 @@
 import React, {useEffect} from 'react';
 import { BsBehance } from 'react-icons/bs';
 import { FiDribbble } from 'react-icons/fi';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { AiOutlineTwitter } from 'react-icons/ai';
 import UserProjectsContent from '../../components/UserProjectsContent';
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
@@ -36,12 +38,12 @@ const UserProjects = () => {
         </div>
       </div>
       <div className='users__project__links'>
-        <div> 
-          <FiDribbble />
-          <span>
-            <BsBehance  />
-          </span>
-        </div>
+        <span>
+          <a href='https://dribbble.com/adaihueze'><FiDribbble /></a>
+          <a href='https://www.behance.net/rosemarynneoma'><BsBehance /></a>
+          <a href='https://twitter.com/adaihueze'><AiOutlineTwitter /></a>
+          <a href='https://www.linkedin.com/in/rosemary-nwosu-ihueze'><FaLinkedinIn /></a>
+        </span>
         <UserProjectsContent
           text='ui design' first= 'dashboard' 
           second= 'interior' third='craigslist'
