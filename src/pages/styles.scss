@@ -2,14 +2,32 @@
   width: 100%;
   height: 100%;
   outline: none;
-  .page__tutorboost-img {
-    display: block;
+  position: relative;
+  .img__page {
     width: 100%;
     height: auto;
-    // max-width: 2500px; /* Set a max width to prevent the image from becoming too large on larger screens */
+    max-width: 2500px; /* Set a max width to prevent the image from becoming too large on larger screens */
     margin: 0 auto; /* Center the image horizontally */
   }
 }
 .page__tutorboost:focus {
   outline: none;
+}
+
+.spinner {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

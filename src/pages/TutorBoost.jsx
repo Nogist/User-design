@@ -1,13 +1,27 @@
-import React from 'react';
-import image1 from '../assets/TutorBoost.png';
+import React, { useState } from 'react';
 import './styles.scss';
 
 const TutorBoost = () => {
+
+  const myImage = 'https://res.cloudinary.com/ddgxwjgov/image/upload/q_auto,f_auto/v1678833497/Userdesign/pages/TutorBoost_h7jbzc.png';
+  const [loading, setLoading] = useState(true);
+
+  const handleImageLoad = () => {
+    setLoading(false);
+  }
+
   return (
     <div className='page__tutorboost'>
-      <img src={image1} alt="mainpage" className='page__tutorboost-img' />
+      {loading && <div className="spinner"></div>}
+      <img
+        src={myImage}
+        alt="mainpage"
+        className='img__page'
+        onLoad={handleImageLoad}
+        style={{ display: loading ? "none" : "block" }}
+      />
     </div>
   )
 }
 
-export default TutorBoost
+export default TutorBoost;
