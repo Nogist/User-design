@@ -8,6 +8,10 @@ import './home.scss';
 import UserDetails from './UserDetails';
 import Contact from './Contact';
 import { useInView } from 'react-intersection-observer';
+import image1 from  '../../assets/background.png';
+import image2 from '../../assets/background2.png';
+import image3 from '../../assets/logobg.png';
+import image4 from '../../assets/background3.png';
 
 const Home = () => {
 
@@ -15,9 +19,26 @@ const Home = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const imageUrls = [
+    image1,
+    image2,
+    image3,
+    image4,
+  ]
+
+   // Looping through the array to preload the images
+   useEffect(() => {
+    imageUrls.forEach((imageUrl) => {
+      const img = new Image();
+      img.src = imageUrl;
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  
+
   const { ref: ref1, inView: visible1 } = useInView({
     threshold: 0.49,
-    rootMargin: "170px 0px -150px 0px",
+    rootMargin: "170px 0px -300px 0px",
   });
   const { ref: ref2, inView: visible2 } = useInView({
     threshold: 0.45,
