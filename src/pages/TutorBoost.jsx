@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './styles.scss';
+import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 
 const TutorBoost = () => {
 
@@ -12,13 +13,21 @@ const TutorBoost = () => {
 
   return (
     <div className='page__tutorboost'>
-      {loading && <div className="spinner"></div>}
+      {loading && 
+        (<div>
+          <ClimbingBoxLoader 
+            size={25}
+            color={'#82c8e6'} 
+            loading={loading}
+          />
+          </div>
+        )}
       <img
         src={myImage}
         alt="mainpage"
         className='img__page'
-        onLoad={handleImageLoad}
         style={{ display: loading ? "none" : "block" }}
+        onLoad={handleImageLoad}
       />
     </div>
   )

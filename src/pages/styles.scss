@@ -2,7 +2,14 @@
   width: 100%;
   height: 100%;
   outline: none;
-  position: relative;
+  div {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .img__page {
     width: 100%;
     height: auto;
@@ -14,19 +21,7 @@
   outline: none;
 }
 
-.spinner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: block;
-  margin: 0 auto;
-  border: 8px solid rgba(255, 255, 255, 0.2);
-  border-top: 8px solid #fff;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: spin 1s ease-in-out infinite;
-}
+
 
 @keyframes spin {
   0% {
