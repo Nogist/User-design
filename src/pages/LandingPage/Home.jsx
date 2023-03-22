@@ -35,11 +35,18 @@ const Home = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   
+  const screenWidth = window.innerWidth;
 
   const { ref: ref1, inView: visible1 } = useInView({
     threshold: 0.49,
     rootMargin: "170px 0px -300px 0px",
   });
+
+  const { ref: refMobile, inView: visibleMobile } = useInView({
+    threshold: 0.35,
+    rootMargin: screenWidth < 600 ? "170px 0px -300px 0px" : "170px 0px 0px 0px",
+  });
+
   const { ref: ref2, inView: visible2 } = useInView({
     threshold: 0.45,
     rootMargin: "0px 0px 0px 0px",
@@ -56,10 +63,10 @@ const Home = () => {
 
   return (
     <div className='home'>
-      <div className={`sections ${visible1 && 'active3' } ${visible2 && 'active5' } ${visible3 && 'active0'} ${visible4 && 'active4'}`}></div>
+      <div className={`sections ${visible1 && 'active3' } ${visibleMobile && 'active3'} ${visible2 && 'active5' } ${visible3 && 'active0'} ${visible4 && 'active4'}`}></div>
       <Navbar />
       <Header text='user' text1='centered' text2='design' />
-      <div ref={ref1} className={`home__designer`} id='designer'>
+      <div ref={screenWidth < 600 ? refMobile:ref1} className={`home__designer`} id='designer'>
         <Designer text="ui" text0='ux' text2="designer" />
       </div>
       <div ref={ref2} className={`home__userdetails`}>

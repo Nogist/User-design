@@ -35,10 +35,10 @@ const UserProjects = () => {
       </div>
       <div className='users__project__links'>
         <span>
-          <a href='https://dribbble.com/adaihueze'><FiDribbble /></a>
-          <a href='https://www.behance.net/rosemarynneoma'><BsBehance /></a>
-          <a href='https://twitter.com/adaihueze'><AiOutlineTwitter /></a>
-          <a href='https://www.linkedin.com/in/rosemary-nwosu-ihueze'><FaLinkedinIn /></a>
+          <a href='https://dribbble.com/adaihueze'  target="_blank" rel="noreferrer"><FiDribbble /></a>
+          <a href='https://www.behance.net/rosemarynneoma'  target="_blank" rel="noreferrer"><BsBehance /></a>
+          <a href='https://twitter.com/adaihueze'  target="_blank" rel="noreferrer" ><AiOutlineTwitter /></a>
+          <a href='https://www.linkedin.com/in/rosemary-nwosu-ihueze'  target="_blank" rel="noreferrer"><FaLinkedinIn /></a>
         </span>
         <UserProjectsContent
           text='ui design' first= 'dashboard' 
