@@ -217,10 +217,10 @@
 .header .header__content{
   height: 100%;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 36px;
   font-family: $fontText;
-  text-transform: lowercase !important;
+  text-transform: unset !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -263,8 +263,10 @@
   position: relative;
   opacity: 0;
   transition: opacity 1.2s ease-in-out;
-
-
+  p {
+    font-size: 30px;
+    line-height: 36px;
+  }
   div {
     position: absolute;
     bottom: 40px;
@@ -385,7 +387,7 @@
   padding: 0px 10.42%;
   opacity: 0;
   transition: opacity 1.2s ease-in-out;
-  span {
+  .contact__talk {
     display: flex;
     align-items: center;
     gap: 64px;
@@ -395,16 +397,47 @@
   p {
     color: white;
   }
-  a {
-    border: 1px solid white;
-    padding: 12px 24px;
-    text-transform: uppercase;
-    color: white;
-    font-family: $fontText;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    #contact__mail {
+      border: 1px solid white;
+      padding: 12px 24px;
+      text-transform: uppercase;
+      color: white;
+      font-family: $fontText;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+    }
+    span {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      justify-content: center;
+      a:first-child {
+        color: white;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+      }
+      a:last-child {
+        color: #1A1A1A;
+        border: 1px solid white;
+        border-radius: 3px;
+        background-color: white;
+        font-size: 17px;
+        height: 24px;
+        width: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
   }
+  
 }
 .contact.active {
   opacity: 1;
@@ -492,10 +525,16 @@ div.animate {
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
   .gallery {
     div {
       width: 300px
+    }
+  }
+  .contact {
+    .contact__talk {
+      display: flex;
+      gap: 16px;
     }
   }
 }

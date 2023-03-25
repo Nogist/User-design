@@ -19,12 +19,11 @@ const UserProjects = () => {
         <UserProjectsContent 
           text='ux design' first= 'chowai' 
           second= 'tutorboost' third='medicci'
-          fourth='nftloan' fifth= 'jazzhut' 
-          linkfirst= '/'
+          fourth='nftloan' 
+          linkfirst= '/404'
           linksecond= '/TutorBoost'
           linkthird= '/Medicci'
           linkfourth= '/NftLoan'
-          linkfifth= '/'
         />
         <div className='users__project__view'>
           <Link to='/allprojects'>
@@ -41,14 +40,13 @@ const UserProjects = () => {
           <a href='https://www.linkedin.com/in/rosemary-nwosu-ihueze'  target="_blank" rel="noreferrer"><FaLinkedinIn /></a>
         </span>
         <UserProjectsContent
-          text='ui design' first= 'dashboard' 
-          second= 'interior' third='craigslist'
-          fourth='baas' fifth= 'the awakened woman' 
-          linkfirst= '/'
-          linksecond= '/'
-          linkthird= '/'
-          linkfourth= '/Baas'
-          linkfifth= '/AwakenedWoman'
+          text='ui design' first= 'Innov8IQ' 
+          second='Codeviator' third='baas'
+          fourth='the awakened woman'
+          linkfirst= '/innov8iq'
+          linksecond= '/Codeviator'
+          linkthird= '/Baas'
+          linkfourth= '/AwakenedWoman'
         />
       </div>
     </div>

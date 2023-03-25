@@ -31,3 +31,22 @@
     transform: rotate(360deg);
   }
 }
+
+.coming__soon {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  gap: 48px;
+  background-image:url('../assets/background3.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  h1 {
+    color: white;
+  }
+  a {
+    position: absolute;
+    top: 50px;
+    left: 10.42%;
+  }
+}

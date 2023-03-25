@@ -171,18 +171,13 @@
 .projects__context {
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
+  flex-direction: column;
   z-index: 1;
-  .projects__context__div {
-    display: flex;
-    flex-direction: column;
     .projects__context__buttons {
       margin: 56px 0 36px;
+      position: relative;
     }
     span {
-      position: relative;
       width: 100%;
       img {
         object-fit: cover;
@@ -223,7 +218,7 @@
         height: 44px;
       }
     }
-  }
+  
 }
 .projects__context.active {
   opacity: 1;

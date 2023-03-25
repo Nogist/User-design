@@ -6,7 +6,7 @@ const UserProjectsContent = (props) => {
   return (
     <div className='user__projects__content'>
       <h3>{props.text}</h3>
-      <Link to ='/allprojects' id='first__stroke'>
+      <Link to ={props.linkfirst} id='first__stroke'>
           <p>{props.first}</p>
           <AiOutlineArrowRight /> 
       </Link>
@@ -20,10 +20,6 @@ const UserProjectsContent = (props) => {
       </Link>
       <Link to={props.linkfourth}>
           <p>{props.fourth}</p>
-          <AiOutlineArrowRight />
-      </Link>
-      <Link to={props.linkfifth}>
-          <p>{props.fifth}</p>
           <AiOutlineArrowRight />
       </Link>
     </div>
