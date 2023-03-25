@@ -181,7 +181,7 @@ const Menu = () => {
               head= 'Codeviator'
               text3 = {me2}
               onHeadClick={() => handleHeadClick(image8)}
-              linkaddress= '/innov8iq'
+              linkaddress= '/codeviator'
             />
           </span>
           <span>
