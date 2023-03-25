@@ -532,6 +532,9 @@ div.animate {
     }
   }
   .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .contact__talk {
       display: flex;
       gap: 16px;
