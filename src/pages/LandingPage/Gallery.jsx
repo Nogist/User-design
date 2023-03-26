@@ -55,6 +55,20 @@ const Gallery = () => {
           <img src={image6} alt="gallery" />
           <img src={image7} alt="gallery" />
         </div>
+        <div className={`${inviews && 'animate'}`}>
+          <img src={image1} alt="gallery" />
+        </div>
+        <div className={`${inviews && 'animate'}`}>
+          <img src={image2} alt="gallery" />
+          <img src={image3} alt="gallery" />
+        </div>
+        <div className={`${inviews && 'animate'}`}>
+          <img src={image4} alt="gallery" />
+        </div>
+        <div className={`${inviews && 'animate'}`}>
+        <img src={image5} alt="gallery" />
+        <img src={image6} alt="gallery" />
+      </div>
       </div>
     </div>
   )
