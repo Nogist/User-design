@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
 import './styles.scss';
+import { BsArrowLeft } from 'react-icons/bs';
+import { useNavigate } from 'react-router-dom';
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 
 const Innov8IQ = () => {
   const myImage = 'https://res.cloudinary.com/ddgxwjgov/image/upload/q_auto,f_auto/v1679648733/Userdesign/pages/Desktop-1_uyz0hc.png';
 
   const [loading, setLoading] = useState(true);
+
+  const navigate = useNavigate();
+
+  const backClick = () => {
+    navigate(-1); 
+  };
 
   const handleImageLoad = () => {
     setLoading(false);
@@ -29,6 +37,12 @@ const Innov8IQ = () => {
         style={{ display: loading ? "none" : "block" }}
         onLoad={handleImageLoad}
       />
+      {!loading && 
+        <span onClick={backClick}>
+          <BsArrowLeft />
+          <p>Back</p>
+        </span>
+      }
     </div>
   )
 }

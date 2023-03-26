@@ -1,15 +1,25 @@
 import React, { useState } from 'react';
 import './styles.scss';
-import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
+import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader"; 
+import { BsArrowLeft } from 'react-icons/bs';
+import { useNavigate } from 'react-router-dom';
 
 const Baas = () => {
   const myImage = 'https://res.cloudinary.com/ddgxwjgov/image/upload/q_auto,f_auto/v1678834164/Userdesign/pages/BaaS_z1zgzx.png';
 
   const [loading, setLoading] = useState(true);
 
+  const navigate = useNavigate();
+
+  const backClick = () => {
+    navigate(-1); 
+  };
+
   const handleImageLoad = () => {
     setLoading(false);
   };
+
+  
 
   return (
     <div className='page__tutorboost'>
@@ -29,6 +39,12 @@ const Baas = () => {
         style={{ display: loading ? "none" : "block" }}
         onLoad={handleImageLoad}
       />
+      {!loading && 
+        <span onClick={backClick}>
+          <BsArrowLeft />
+          <p>Back</p>
+        </span>
+      }
     </div>
   )
 }

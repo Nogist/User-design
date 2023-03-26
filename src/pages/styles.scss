@@ -16,6 +16,22 @@
     max-width: 2500px; /* Set a max width to prevent the image from becoming too large on larger screens */
     margin: 0 auto; /* Center the image horizontally */
   }
+  span {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 2rem;
+    padding: 1rem 2rem 2rem;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    p {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+  }
 }
 .page__tutorboost:focus {
   outline: none;
@@ -48,5 +64,18 @@
     position: absolute;
     top: 50px;
     left: 10.42%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .page__tutorboost {
+    span {
+      display: flex;
+      gap: 5px;
+      font-size: 1rem;
+      p {
+        font-size: 1rem;
+      }
+    }
   }
 }

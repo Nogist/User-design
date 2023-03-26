@@ -132,7 +132,7 @@ const Menu = () => {
               text2 = {solution2}
               text3 = {impact2}
               onHeadClick={() => handleHeadClick(image2)}
-              linkaddress1 ='/TutorBoost'
+              linkaddress ='/TutorBoost'
             />
           </span>
           <span>
