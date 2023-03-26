@@ -541,4 +541,25 @@ div.animate {
       gap: 16px;
     }
   }
+  .user__details {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    h6 {
+      margin-top: 1.5rem ;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+    div {
+      padding: 1.5rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      bottom: 0px;
+      h1 {
+        font-size: .8rem;
+      }
+    }
+  }
 }

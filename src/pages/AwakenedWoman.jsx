@@ -23,7 +23,7 @@ const AwakenedWoman = () => {
       {loading && 
         (<div>
           <ClimbingBoxLoader 
-            size={25} 
+            size={18} 
             color={'#82c8e6'} 
             loading={loading}
           />
@@ -37,10 +37,10 @@ const AwakenedWoman = () => {
         onLoad={handleImageLoad}
       />
       {!loading && 
-        <span onClick={backClick}>
+        <div onClick={backClick}>
           <BsArrowLeft />
           <p>Back</p>
-        </span>
+        </div>
       }
     </div>
   )

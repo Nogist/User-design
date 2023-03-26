@@ -2,7 +2,7 @@
   width: 100%;
   height: 100%;
   outline: none;
-  div {
+  div:first-child {
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -16,7 +16,7 @@
     max-width: 2500px; /* Set a max width to prevent the image from becoming too large on larger screens */
     margin: 0 auto; /* Center the image horizontally */
   }
-  span {
+  div:last-child {
     display: flex;
     align-items: center;
     gap: 16px;
@@ -26,9 +26,10 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    font-size: 2.5rem;
     p {
       font-size: 1.8rem;
-      font-weight: 700;
+      font-weight: 500;
     }
 
   }
@@ -69,12 +70,13 @@
 
 @media only screen and (max-width: 600px) {
   .page__tutorboost {
-    span {
+    div:last-child {
       display: flex;
       gap: 5px;
       font-size: 1rem;
+      padding-bottom: 1.3rem !important;
       p {
-        font-size: 1rem;
+        font-size: .7rem;
       }
     }
   }
