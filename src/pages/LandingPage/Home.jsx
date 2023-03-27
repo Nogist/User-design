@@ -38,12 +38,12 @@ const Home = () => {
   const screenWidth = window.innerWidth;
 
   const { ref: ref1, inView: visible1 } = useInView({
-    threshold: 0.49,
+    threshold: 0.40,
     rootMargin: "170px 0px -300px 0px",
   });
 
   const { ref: refMobile, inView: visibleMobile } = useInView({
-    threshold: 0.35,
+    threshold: 0.2,
     rootMargin: screenWidth < 600 ? "170px 0px -300px 0px" : "170px 0px 0px 0px",
   });
 

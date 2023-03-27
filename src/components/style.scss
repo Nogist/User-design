@@ -35,7 +35,7 @@
 }
 
 .animate {
-  animation-duration: 1.5s;
+  animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   transition: transform 0.5s ease-out;
@@ -180,8 +180,8 @@
     span {
       width: 100%;
       img {
-        object-fit: cover;
-        max-width: 100%;
+        object-fit: contain;
+        width: 100%;
         height: auto;  
       }
     }
@@ -226,6 +226,11 @@
 
 
 @media only screen and (max-width: 750px) {
+  .navbar {
+    a:first-child {
+      width: 30%;
+    }
+  }
   .user__projects__content {
     width: 100%;
     p {
@@ -239,6 +244,61 @@
     display: flex;
     flex-direction: column;
   }
+}
+@media only screen and (max-width: 600px) {
+  .users__projects {
+    .users__project__view {
+      width: 100px;
+      a {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 24px;
+      }
+    } 
+  }
+  .users__projects{
+    .users__project__links {
+      span {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 0;
+      }
+    } 
+  }
+  .navbar {
+    a:first-child {
+      width: 20%;
+    }
+    h5 {
+      font-size: 1.5rem;
+    }
+  } 
+}
 
-
+@media only screen and (max-width: 450px) {
+  .navbar {
+    position: relative;
+    a:first-child {
+      width: 20%;
+    }
+    h5 {
+      font-size: 1.5rem;
+    }
+  }
+  .designers__header {
+    .designers {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px !important;
+      h1 {
+        padding: 0;
+      }
+      h1:first-child {
+        width: 80px;
+      }
+    }
+  }
 }

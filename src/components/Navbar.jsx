@@ -9,7 +9,9 @@ const Navbar = () => {
       <Link to='/'>
         <img src={logo} alt="logo" />
       </Link>
-      <h5>docs</h5>
+      <Link to= '/404'>
+        <h5>docs</h5>
+      </Link>
     </div>
   )
 }

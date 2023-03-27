@@ -80,4 +80,15 @@
       }
     }
   }
+  .coming__soon {
+    a {
+      width: 20%;
+      top: 25px;
+      img {
+        object-fit: cover;
+        max-width: 100%;
+        height: auto;  
+      }
+    }
+  }
 }

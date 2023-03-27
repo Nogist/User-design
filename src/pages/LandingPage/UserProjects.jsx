@@ -43,8 +43,8 @@ const UserProjects = () => {
           text='ui design' first= 'Innov8IQ' 
           second='Codeviator' third='baas'
           fourth='the awakened woman'
-          linkfirst= '/innov8iq'
-          linksecond= '/Codeviator'
+          linkfirst= '/404'
+          linksecond= '/404'
           linkthird= '/Baas'
           linkfourth= '/AwakenedWoman'
         />

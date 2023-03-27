@@ -30,6 +30,9 @@ const ProjectContext = (props) => {
         {props.linkaddress && <Link to={props.linkaddress}>
           <button>view project</button>
         </Link>}
+        {props.no_link &&
+          <button style={{cursor: 'default'}}>view project</button>
+        }
       </div>
     </div>
   )

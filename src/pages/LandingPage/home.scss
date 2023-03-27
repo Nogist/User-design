@@ -217,7 +217,7 @@
 .header .header__content{
   height: 100%;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 36px;
   font-family: $fontText;
   text-transform: unset !important;
@@ -490,13 +490,13 @@ div.animate {
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-300px);
-            transform: translateX(-300px);
+    -webkit-transform: translateX(-200px);
+            transform: translateX(-200px);
   }
 }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
   .user__projects {
     div {
       display: flex;
@@ -524,9 +524,24 @@ div.animate {
   .circular-text-container {
     visibility: hidden;
   }
+  .user__details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    p {
+      font-size: 23px;
+    }
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .headers {
+    .header {
+      .header__content {
+        font-size: 1.2rem;
+      }
+    }
+  }
   .gallery {
     div {
       width: 300px
@@ -546,17 +561,72 @@ div.animate {
     flex-direction: column;
     gap: 0;
     h6 {
-      margin-top: 1.5rem ;
-    }
-    p {
+      margin-top: 1rem ;
       font-size: 1.3rem;
     }
+    p {
+      font-size: .8rem;
+      line-height: 20px;
+    }
     div {
-      padding: 1.5rem 1rem;
+      padding: 20px 5px;
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 0;
-      bottom: 0px;
+      bottom: 10px;
+      h1 {
+        font-size: .8rem;
+      }
+    }
+  }
+  
+}
+@media only screen and (max-width: 450px) {
+  .headers {
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+      height: calc(100vh - 70px);
+      padding: 0;
+      
+      h1 {
+        font-size: 3rem;
+        padding: 0 !important;
+      }
+      h1:last-child {
+        align-self: center;
+      }
+      .header__content {
+        font-size: .9rem;
+        padding: 0 10.42% !important;
+        
+      }
+    }
+  }
+  .user__details {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    h6 {
+      margin-top: 1rem ;
+      font-size: 1.3rem;
+    }
+    p {
+      font-size: .8rem;
+      line-height: 20px;
+    }
+    div {
+      padding: 20px 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      right: auto;
+      bottom: 10px;
       h1 {
         font-size: .8rem;
       }

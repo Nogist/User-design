@@ -11,8 +11,7 @@ import image3 from '../../assets/mock3.jpg';
 import image4 from '../../assets/mock4.jpg';
 import image5 from '../../assets/mock5.jpg';
 import image6 from  '../../assets/mock6.jpg';
-import image7 from '../../assets/mock7.png';
-import image8 from  '../../assets/mock8.png';
+import image7 from '../../assets/mock9.png';
 import { useInView } from 'react-intersection-observer';
 import CircularText from '../../components/CircularText';
 import { AiOutlineTwitter } from 'react-icons/ai'
@@ -42,8 +41,8 @@ const Menu = () => {
   const impact2 = 'Increase in quality education for the under privileged community which makes achieving the SDG4 goal much faster.'
   const impact3 = 'Improvement in the overall learning experience of the students in the program with improved retention through visualization and simulation.'
   const impact4 = 'Opens up opportunities in the blockchain industry where NFTs can be used beyond the digital metaverse and leveraged for real world use.'
-  const me ='Innov8IQ is a case study template builder for UX designers. It reduces the need for templates as there is availability of pre-made templates or layout for all round customization and creativity.'
-  const me2 = 'Codeviator is a smart coding devtool for developers. It helps developers write their codes, review and document their code. This platform is GPT-4 backed which includes image-to-code features.'
+  // const me ='Innov8IQ is a case study template builder for UX designers. It reduces the need for templates as there is availability of pre-made templates or layout for all round customization and creativity.'
+  // const me2 = 'Codeviator is a smart coding devtool for developers. It helps developers write their codes, review and document their code. This platform is GPT-4 backed which includes image-to-code features.'
   const me3 = 'BAAS also known as Boyfriend-as-a-service platform where single ladies can come in to “rent” boyfriends and fiances for family gathering and events especially if they would be hassled about their singleness.'
   const me4 = 'The Awakened Woman is an NFT collection website of 5555 arts geared at helping women through empowerments, health and fitness. The site portrays in-depth arts and craft which matches the collection theme.'
 
@@ -172,16 +171,17 @@ const Menu = () => {
             <ProjectContext
               picture={image7}
               head= 'Innov8IQ'
-              text3 = {me}
               onHeadClick={() => handleHeadClick(image7)}
-              linkaddress= '/innov8iq'
+              no_link ='show project'
+              className='no__link'
+              
             />
             <ProjectContext
-              picture={image8}
+              picture={image7}
               head= 'Codeviator'
-              text3 = {me2}
-              onHeadClick={() => handleHeadClick(image8)}
-              linkaddress= '/codeviator'
+              onHeadClick={() => handleHeadClick(image7)}
+              no_link ='show project'
+              className='no__link'
             />
           </span>
           <span>
