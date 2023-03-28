@@ -246,27 +246,7 @@
   }
 }
 @media only screen and (max-width: 600px) {
-  .users__projects {
-    .users__project__view {
-      width: 100px;
-      a {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-        padding: 24px;
-      }
-    } 
-  }
-  .users__projects{
-    .users__project__links {
-      span {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        gap: 0;
-      }
-    } 
-  }
+ 
   .navbar {
     a:first-child {
       width: 20%;

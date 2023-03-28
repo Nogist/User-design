@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import Header from '../LandingPage/Header';
+import Header from '../Home/Header';
 import Navbar from '../../components/Navbar';
 import Designer from '../../components/Designer';
-import Contact from '../LandingPage/Contact';
+import Contact from '../Home/Contact';
 import ProjectContext from '../../components/ProjectContext';
 import PictureModal from './PictureModal';
 import image1 from '../../assets/mock.png';
@@ -17,7 +17,7 @@ import CircularText from '../../components/CircularText';
 import { AiOutlineTwitter } from 'react-icons/ai'
 import { FaLinkedinIn }from 'react-icons/fa';
 import './menu.scss';
-import '../LandingPage/home.scss';
+import '../Home/home.scss';
 import '../../components/style.scss';
 
 

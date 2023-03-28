@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Menu from './pages/AllProjects/Menu';
-import Homes from "./pages/LandingPage/Home";
+import Home from "./pages/Home/Home";
 import NftLoan from "./pages/NftLoan";
 import TutorBoost from "./pages/TutorBoost";
 import Medicci from './pages/Medicci';
@@ -14,7 +14,7 @@ import ComingSoon from "./pages/ComingSoon";
 function App() {
   return (
     <Routes>
-      <Route path= '/' element= {<Homes />} />
+      <Route path= '/' element= {<Home />} />
       <Route path= '/allprojects' element = {<Menu />} />
       <Route path= '/tutorboost' element = {<TutorBoost />} />
       <Route path= '/nftloan' element = {<NftLoan />} />

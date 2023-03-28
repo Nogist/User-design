@@ -1,19 +1,20 @@
 import React from 'react';
-import CircularText from '../../components/CircularText';
 import './home.scss';
+import CircularText from '../../components/CircularText';
 
-const Header = () => {
+const Header = (props) => {
   return (
     <div className='headers'>
       <div className='header'>
-        <h1>user</h1>
-        <h1>Centered</h1>
-        <h1>Design</h1>
+        {props.text && <h1>{props.text}</h1>}
+        {props.text1 && <h1>{props.text1}</h1>}
+        {props.text3 && <h1 className='header__content'>{props.text3}</h1>}
+        {props.text2 && <h1>{props.text2}</h1>}
       </div>
-      <div className='circular-text-container'>
+      <a href='#designer' className={`circular-text-container`}>
         <CircularText />
-      </div>
-  </div>
+      </a>
+    </div>
   )
 }
 
