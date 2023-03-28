@@ -474,7 +474,7 @@
 }
 
 div.animate {
-  animation: slide-left 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-left 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @keyframes slide-left {
@@ -483,8 +483,8 @@ div.animate {
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-200px);
-            transform: translateX(-200px);
+    -webkit-transform: translateX(-490px);
+            transform: translateX(-490px);
   }
 }
 
@@ -537,6 +537,20 @@ div.animate {
       width: 300px
     }
   }
+  div.animate {
+    animation: slide-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-290px);
+              transform: translateX(-290px);
+    }
+  }
   .contact {
     display: flex;
     flex-direction: column;
@@ -556,7 +570,7 @@ div.animate {
     }
 
     div {
-      padding: 20px 5px;
+      padding: 20px 13px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -602,7 +616,6 @@ div.animate {
       font-size: 1.3rem;
     }
     div {
-      padding: 20px 5px;
       display: flex;
       flex-direction: column;
       align-items: center;
