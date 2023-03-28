@@ -98,13 +98,13 @@
   justify-content: center;
   gap: 48px;
   
-  h1:last-child {
+  #second {
     align-self: center;
   }
   h1:first-child {
     padding-left: 10.42%;
   }
-  h1:nth-child(2) {
+  #first {
     padding-left: 10.42%;
   }
 }
@@ -277,7 +277,7 @@
   } 
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 400px) {
   .navbar {
     position: relative;
     a:first-child {
@@ -298,6 +298,9 @@
       }
       h1:first-child {
         width: 80px;
+      }
+      #first {
+        padding: 0;
       }
     }
   }

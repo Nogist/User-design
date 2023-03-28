@@ -114,15 +114,23 @@ button {
     font-size: 20px;
     height: 40px;
   }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
  
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 400px) {
   h1 {
     font-size: 2.5rem;
   }
   button {
     width: 90%;
     font-size: 15px;
+  }
+  p {
+    line-height: 20px;
   }
 }

@@ -21,8 +21,8 @@ const Designer = (props) => {
         ) : (
           <h1 id='swapping'>{props.text0}</h1>
         )}
-        {props.text1 && <h1>{props.text1}</h1>}
-        {props.text2 && <h1>{props.text2}</h1>}
+        {props.text1 && <h1 id='first'>{props.text1}</h1>}
+        {props.text2 && <h1 id='second'>{props.text2}</h1>}
       </div>
     </div>
   )
